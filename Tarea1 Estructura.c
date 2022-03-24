@@ -54,7 +54,7 @@ int requisito(char str1[], char str2[]){
 }
 
 //Procedimiento base de enigma, donde se dan 5 variables (Nombre entrada archivo, acción decode o encode, palabra clave 1 y palabra clave 2, y por ultimo nombre salida archivo)
-void enigma(char nombreE[], char accion[], char palabra1[], char palabra2[], char nombreS[]) {
+void enigma(char nombreE[], char accion[], , char mensaje[], char palabra1[], char palabra2[], char nombreS[]) {
   
   printf("\n%s\n", nombreE);
 
@@ -83,6 +83,6 @@ void enigma(char nombreE[], char accion[], char palabra1[], char palabra2[], cha
 }
   
 int main(void) {
-  enigma("Hola.txt", "decode", "qwerv", "Tsdfg",   "Chao.txt");
+  enigma("Hola.txt", "decode", "Wena waxho qlo", "qwerv", "Tsdfg",   "Chao.txt");
   return 0;
 }
